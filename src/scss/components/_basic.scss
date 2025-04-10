@@ -1,0 +1,16 @@
+@use 'variables' as vars;
+@use '../mixins/_font-face.scss' as font;
+
+body{
+  font-family: Roboto,serif;
+  font-size: 1rem;
+  background-color: vars.$color-gray;
+  color: vars.$color-accent;
+}
+
+.container{
+  max-width: calc((vars.$container-width) + (vars.$container-padding-x) * 2);
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: vars.$container-padding-x;
+}
